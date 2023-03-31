@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>BONIIIIIIIIII</title>
+        <link rel="stylesheet" href="assets/stylesheet1.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="author" content="Leander van den Heuvel">
+        <link href="fontawesome/css/all.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="icons/Achelous_favicon.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="icons/fustival_icon_32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="icons/fustival_icon_96.png" sizes="96x96">
+    </head>
+    <body>
+      <div id="lijst">
+    </div>
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal spelers bewerken -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Nieuwe speler</h3>
+      <div style="display:flex; flex-direction: row; justify-content: left;">
+        <!-- <label for="fname">Naam: </label> -->
+        <input class = "blueBorder" type="text" placeholder="naam speler" pattern="[A-Za-z]{3}" id="fname" name="fname"><br><br>
+        <button class="button" id="enterButton"><i class="fa-solid fa-circle-plus"></i> Voeg Speler toe</button>
+    </div>
+      <hr class="scheiding">
+      <h3>Verwijder speler</h3>      
+      <!-- <label for="fname">Naam: </label> -->
+      <select class = "blueBorder" name="players" id="selectPlayers"></select>
+      <button class="button" id="deleteButton"><i class="fa-solid fa-delete-left"></i> Verwijder speler</button>
+      <hr class="scheiding">
+      <h3>Score aanpassen</h3>      
+      <!-- <label for="fname">Naam: </label> -->
+      <select class = "blueBorder" name="players" id="selectPlayersScore"></select>
+      <button class="button" id="lowerScoreButton"><i class='fa-solid fa-circle-minus'></i> Verlaag score</button>
+    </div>
+  </div>
+  <div id="settingsModal" class="modal">
+
+    <!-- Modal settings -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Instellingen</h3>
+      <button class="button" id="shuffleColors">Shuffle kleuren</button>
+      <h3></h3>
+      
+    </div>
+  </div>
+    <a id="myBtn" href="#" class="float">
+        <i class="fa fa-bars my-float"></i>
+    </a>
+    <a id= "settingsButton" href="#" class="float delete">
+        <i class="fa fa-gears my-float"></i>
+    </a>
+    <script src="assets/main.js"></script>
+    </body>
+</html>
